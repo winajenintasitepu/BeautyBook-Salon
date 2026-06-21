@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Reservasi</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+<h1>Data Reservasi</h1>
+
+<table>
+
+<tr>
+    <th>ID</th>
+    <th>Nama</th>
+    <th>Telepon</th>
+    <th>Layanan</th>
+    <th>Tanggal</th>
+    <th>Jam</th>
+</tr>
+
+{% for d in data %}
+<tr>
+    <td>{{ d[0] }}</td>
+    <td>{{ d[1] }}</td>
+    <td>{{ d[2] }}</td>
+    <td>{{ d[3] }}</td>
+    <td>{{ d[4] }}</td>
+    <td>{{ d[5] }}</td>
+</tr>
+{% endfor %}
+
+</table>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>BeautyBook Salon</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+```
+<div class="banner">
+    <h1>💎 BeautyBook Salon</h1>
+    <p>Booking Salon Online Mudah, Cepat dan Modern</p>
+</div>
+
+<h2 style="text-align:center;color:#4b7bec;margin-bottom:20px;">
+    Model Rambut Favorit
+</h2>
+
+<div class="gallery">
+
+    <div class="model-card">
+        <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df">
+        <h3>Hair Cut Modern</h3>
+    </div>
+
+    <div class="model-card">
+        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e">
+        <h3>Hair Coloring</h3>
+    </div>
+
+    <div class="model-card">
+        <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2">
+        <h3>Creambath Premium</h3>
+    </div>
+
+</div>
+
+<h2 style="text-align:center;color:#4b7bec;margin:30px 0;">
+    Form Booking
+</h2>
+
+<form method="POST">
+
+    <input type="text" name="nama" placeholder="Nama Lengkap" required>
+
+    <input type="text" name="telepon" placeholder="Nomor Telepon" required>
+
+    <select name="layanan">
+        <option>Hair Cut</option>
+        <option>Creambath</option>
+        <option>Hair Coloring</option>
+        <option>Hair Spa</option>
+        <option>Facial</option>
+    </select>
+
+    <input type="date" name="tanggal" required>
+
+    <input type="time" name="jam" required>
+
+    <textarea name="catatan" placeholder="Catatan Tambahan"></textarea>
+
+    <button type="submit">
+        Booking Sekarang
+    </button>
+
+</form>
+```
+
+</div>
+
+</body>
+</html>
